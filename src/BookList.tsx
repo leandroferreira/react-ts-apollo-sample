@@ -1,7 +1,7 @@
 import React from "react"
-import Book from "./Book"
+import Book, { IBook } from "./Book"
 
-const books = [
+const books: IBook[] = [
   {
     title: "Book McBookface",
     author: "John Snow"

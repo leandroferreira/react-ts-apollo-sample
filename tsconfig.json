@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "jsx": "preserve",
+    "rootDir": "./src",
+    "incremental": true,
+    "lib": ["dom", "es2015", "esnext"],
+    "noImplicitAny": true
+  }
+}
