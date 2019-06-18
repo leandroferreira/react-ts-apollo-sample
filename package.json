@@ -7,12 +7,16 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "serve": "node server/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-boost": "^0.4.3",
+    "apollo-server": "^2.6.3",
+    "graphql": "~14.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
