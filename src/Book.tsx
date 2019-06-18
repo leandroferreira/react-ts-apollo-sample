@@ -1,9 +1,15 @@
 import React from "react"
+import gql from "graphql-tag"
+import { Book as IBook } from "../lib/types/graphql/Book"
 
-export interface IBook {
-  title: string
-  author: string
-}
+export type IBook = IBook
+
+export const bookFragment = gql`
+  fragment Book on Book {
+    author
+    title
+  }
+`
 
 const Book: React.FC<IBook> = ({ title, author }) => (
   <div>

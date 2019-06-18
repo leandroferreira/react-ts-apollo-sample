@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "serve": "node server/index.js"
+    "serve": "node server/index.js",
+    "introspect": "apollo client:codegen --outputFlat --target=typescript --includes=src/** lib/types/graphql"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +19,13 @@
     "apollo-server": "^2.6.3",
     "graphql": "~14.2.1",
     "react": "^16.8.6",
+    "react-apollo": "^2.5.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@types/react": "^16.8.20",
     "@types/react-dom": "^16.8.4",
+    "apollo": "^2.13.1",
     "parcel-bundler": "^1.12.3",
     "prop-types": "^15.7.2",
     "typescript": "^3.5.2"
